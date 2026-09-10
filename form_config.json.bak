@@ -1,0 +1,1764 @@
+{
+  "_note": "NJTransitSurvey2026 \u2014 field positions extracted directly from PDF. Coordinates are fractions of page size (0.0\u20131.0). Page 0 = front (Q1-Q18), Page 1 = back (Q19-Q29 + contact).",
+  "pages_per_form": 2,
+  "multi_survey_pdf": true,
+  "groups": {
+    "Q2 - Board Time": {
+      "max_selections": 1
+    },
+    "Q3 - Came From": {
+      "max_selections": 1
+    },
+    "Q5 - To Bus": {
+      "max_selections": 1
+    },
+    "Q8 - After Bus": {
+      "max_selections": 1
+    },
+    "Q10 - Going To": {
+      "max_selections": 1
+    },
+    "Q11 - Frequency": {
+      "max_selections": 1
+    },
+    "Q12 - Ticket": {
+      "max_selections": 1
+    },
+    "Q13 - Pay": {
+      "max_selections": 1
+    },
+    "Q14 - Buy Ticket": {
+      "max_selections": 1
+    },
+    "Q15 - Return": {
+      "max_selections": 1
+    },
+    "Q16 - Trip Purpose": {
+      "max_selections": 1
+    },
+    "Q17 - Alt Mode": {
+      "max_selections": 1
+    },
+    "Q18 - Gender": {
+      "max_selections": 1
+    },
+    "Q19 - Age": {
+      "max_selections": 1
+    },
+    "Q20 - Traveling With Child": {
+      "max_selections": 1
+    },
+    "Q21 - English": {
+      "max_selections": 1
+    },
+    "Q22 - Other Language": {
+      "max_selections": 1
+    },
+    "Q23 - Hispanic/Latino": {
+      "max_selections": 1
+    },
+    "Q24 - Race": {
+      "max_selections": 1
+    },
+    "Q25 - Household Size": {
+      "max_selections": 1
+    },
+    "Q26 - Vehicles in Household": {
+      "max_selections": 1
+    },
+    "Q27 - Disability": {
+      "max_selections": 1
+    },
+    "Q28 - Income": {
+      "max_selections": 1
+    },
+    "Q29 - Most Important Bus Improvement": {
+      "max_selections": 1
+    }
+  },
+  "fields": [
+    {
+      "name": "Q1 - Bus Route Number",
+      "type": "text",
+      "page": 0,
+      "x": 0.303,
+      "y": 0.368,
+      "w": 0.04,
+      "h": 0.02
+    },
+    {
+      "name": "Q2 - Board Time (hour:min)",
+      "type": "text",
+      "page": 0,
+      "x": 0.217,
+      "y": 0.403,
+      "w": 0.05,
+      "h": 0.02
+    },
+    {
+      "name": "Q2 - Board Time: AM",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.2659,
+      "y": 0.4031,
+      "w": 0.02,
+      "h": 0.02
+    },
+    {
+      "name": "Q2 - Board Time: PM",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.2849,
+      "y": 0.4083,
+      "w": 0.02,
+      "h": 0.02
+    },
+    {
+      "name": "Q3 - Came From: Home",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.4551,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q3 - Came From: Work",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0844,
+      "y": 0.4551,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q3 - Came From: School",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.1289,
+      "y": 0.4551,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q3 - Came From: Other",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.1785,
+      "y": 0.4551,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q3 - Came From: Other (specify)",
+      "type": "text",
+      "page": 0,
+      "x": 0.252,
+      "y": 0.453,
+      "w": 0.075,
+      "h": 0.018
+    },
+    {
+      "name": "Q4 - Origin Street Address",
+      "type": "text",
+      "page": 0,
+      "x": 0.041,
+      "y": 0.52,
+      "w": 0.28,
+      "h": 0.022
+    },
+    {
+      "name": "Q4 - Origin City/Town",
+      "type": "text",
+      "page": 0,
+      "x": 0.041,
+      "y": 0.565,
+      "w": 0.065,
+      "h": 0.022
+    },
+    {
+      "name": "Q4 - Origin State",
+      "type": "text",
+      "page": 0,
+      "x": 0.111,
+      "y": 0.565,
+      "w": 0.065,
+      "h": 0.022
+    },
+    {
+      "name": "Q4 - Origin Zip Code",
+      "type": "text",
+      "page": 0,
+      "x": 0.183,
+      "y": 0.565,
+      "w": 0.075,
+      "h": 0.022
+    },
+    {
+      "name": "Q5 - To Bus: Walked Only",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.6451,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Bike",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.1219,
+      "y": 0.6451,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Scooter",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.1674,
+      "y": 0.6451,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Drive",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.229,
+      "y": 0.6451,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Taxi",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.2833,
+      "y": 0.6451,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Carpooled/Dropped Off",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.6617,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Uber/Lyft",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.1664,
+      "y": 0.6617,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Another Bus",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.6789,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Another Bus Route #",
+      "type": "text",
+      "page": 0,
+      "x": 0.241,
+      "y": 0.677,
+      "w": 0.08,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Riverline",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.6962,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Riverline Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.241,
+      "y": 0.695,
+      "w": 0.08,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Light Rail",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.7135,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: Light Rail Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.241,
+      "y": 0.712,
+      "w": 0.08,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: NJ Transit Train",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.7308,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: NJ Transit Train Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.241,
+      "y": 0.729,
+      "w": 0.08,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: SEPTA",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.0384,
+      "y": 0.748,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q5 - To Bus: SEPTA Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.241,
+      "y": 0.746,
+      "w": 0.08,
+      "h": 0.018
+    },
+    {
+      "name": "Q6 - Boarded Street Address",
+      "type": "text",
+      "page": 0,
+      "x": 0.041,
+      "y": 0.8,
+      "w": 0.28,
+      "h": 0.022
+    },
+    {
+      "name": "Q6 - Boarded City/Town",
+      "type": "text",
+      "page": 0,
+      "x": 0.041,
+      "y": 0.848,
+      "w": 0.088,
+      "h": 0.022
+    },
+    {
+      "name": "Q6 - Boarded State",
+      "type": "text",
+      "page": 0,
+      "x": 0.134,
+      "y": 0.848,
+      "w": 0.06,
+      "h": 0.022
+    },
+    {
+      "name": "Q6 - Boarded Zip Code",
+      "type": "text",
+      "page": 0,
+      "x": 0.198,
+      "y": 0.848,
+      "w": 0.07,
+      "h": 0.022
+    },
+    {
+      "name": "Q6 - Boarded Bus Stop #",
+      "type": "text",
+      "page": 0,
+      "x": 0.172,
+      "y": 0.9,
+      "w": 0.15,
+      "h": 0.02
+    },
+    {
+      "name": "Q7 - Alighted Street Address",
+      "type": "text",
+      "page": 0,
+      "x": 0.353,
+      "y": 0.097,
+      "w": 0.29,
+      "h": 0.025
+    },
+    {
+      "name": "Q7 - Alighted City/Town",
+      "type": "text",
+      "page": 0,
+      "x": 0.353,
+      "y": 0.148,
+      "w": 0.088,
+      "h": 0.025
+    },
+    {
+      "name": "Q7 - Alighted State",
+      "type": "text",
+      "page": 0,
+      "x": 0.446,
+      "y": 0.148,
+      "w": 0.06,
+      "h": 0.025
+    },
+    {
+      "name": "Q7 - Alighted Zip Code",
+      "type": "text",
+      "page": 0,
+      "x": 0.511,
+      "y": 0.148,
+      "w": 0.09,
+      "h": 0.025
+    },
+    {
+      "name": "Q8 - After Bus: Walked Only",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.2298,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Bike",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.434,
+      "y": 0.2298,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Scooter",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4818,
+      "y": 0.2298,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Drive",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.5462,
+      "y": 0.2298,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Taxi",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.5981,
+      "y": 0.2298,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Carpooled",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.2471,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Uber/Lyft",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4808,
+      "y": 0.2471,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Another Bus",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.2644,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Bus Route #",
+      "type": "text",
+      "page": 0,
+      "x": 0.516,
+      "y": 0.262,
+      "w": 0.125,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Riverline",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.2816,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Riverline Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.516,
+      "y": 0.279,
+      "w": 0.125,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Light Rail",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.2982,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: Light Rail Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.516,
+      "y": 0.297,
+      "w": 0.125,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: NJ Transit Train",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.3154,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: NJ Train Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.548,
+      "y": 0.314,
+      "w": 0.093,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: SEPTA",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.3327,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q8 - After Bus: SEPTA Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.516,
+      "y": 0.331,
+      "w": 0.125,
+      "h": 0.018
+    },
+    {
+      "name": "Q9 - Destination Street Address",
+      "type": "text",
+      "page": 0,
+      "x": 0.353,
+      "y": 0.388,
+      "w": 0.29,
+      "h": 0.025
+    },
+    {
+      "name": "Q9 - Destination City/Town",
+      "type": "text",
+      "page": 0,
+      "x": 0.353,
+      "y": 0.44,
+      "w": 0.088,
+      "h": 0.025
+    },
+    {
+      "name": "Q9 - Destination State",
+      "type": "text",
+      "page": 0,
+      "x": 0.446,
+      "y": 0.44,
+      "w": 0.06,
+      "h": 0.025
+    },
+    {
+      "name": "Q9 - Destination Zip Code",
+      "type": "text",
+      "page": 0,
+      "x": 0.511,
+      "y": 0.44,
+      "w": 0.09,
+      "h": 0.025
+    },
+    {
+      "name": "Q10 - Going To: Home",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.522,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q10 - Going To: Work",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3964,
+      "y": 0.522,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q10 - Going To: School",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4382,
+      "y": 0.522,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q10 - Going To: Other",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4882,
+      "y": 0.522,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q10 - Going To: Other (specify)",
+      "type": "text",
+      "page": 0,
+      "x": 0.53,
+      "y": 0.52,
+      "w": 0.11,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: Less than once/year",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.5738,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 1-5 times/year",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.5738,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 6-11 times/year",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.5911,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 1-3 days/month",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.5911,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 1-2 days/week",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.6083,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 2 days/week",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.6083,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 3 days/week",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.6256,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 4 days/week",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.6256,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 5 days/week",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.6429,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q11 - Frequency: 6-7 days/week",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.6429,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q12 - Ticket: One-way/Cash",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3542,
+      "y": 0.6947,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q12 - Ticket: Bus Monthly Pass",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.7112,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q12 - Ticket: Rail Monthly Pass",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.7285,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q12 - Ticket: College Student Monthly",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.7458,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q12 - Ticket: Student Ticket",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.7631,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q12 - Ticket: Ten-Trip",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.7803,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q12 - Ticket: Reduced Fares (Senior/Disability)",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.7976,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Cash",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.8494,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Google Pay",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.8494,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Cash from Transit Wallet",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.8667,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Debit Card",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4952,
+      "y": 0.8667,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Credit Card",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.884,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Check",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.884,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Apple Pay",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.3505,
+      "y": 0.9013,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: PayPal",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4335,
+      "y": 0.9013,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Other",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.4896,
+      "y": 0.9013,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q13 - Pay: Other (specify)",
+      "type": "text",
+      "page": 0,
+      "x": 0.53,
+      "y": 0.899,
+      "w": 0.08,
+      "h": 0.018
+    },
+    {
+      "name": "Q14 - Buy Ticket: On-board",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.0916,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q14 - Buy Ticket: NJ Transit Mobile App",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.1089,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q14 - Buy Ticket: Ticket Vending Machine",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.1262,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q14 - Buy Ticket: NJ TRANSIT Ticket Agent",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.1435,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q14 - Buy Ticket: Independent Agent",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.1607,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q14 - Buy Ticket: Other",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.178,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q14 - Buy Ticket: Other (specify)",
+      "type": "text",
+      "page": 0,
+      "x": 0.77,
+      "y": 0.176,
+      "w": 0.15,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Will Not Make",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.2644,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Same Bus 6am-8:59am",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.2816,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Same Bus 9am-3:59pm",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.2982,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Same Bus 4pm-6:59pm",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.3154,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Same Bus 7pm-9:59pm",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.3327,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Same Bus 10pm-11:59pm",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.35,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Same Bus midnight-5:59am",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.3673,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Drive",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.3845,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Taxi",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.4018,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Uber/Lyft",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.4191,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Another Bus",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.4364,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Another Bus Route #",
+      "type": "text",
+      "page": 0,
+      "x": 0.82,
+      "y": 0.434,
+      "w": 0.1,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: PATCO",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.4536,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: PATCO Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.812,
+      "y": 0.452,
+      "w": 0.108,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: NJ Transit Train",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.4709,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: NJ Train Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.813,
+      "y": 0.469,
+      "w": 0.107,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: SEPTA",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.4882,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: SEPTA Station",
+      "type": "text",
+      "page": 0,
+      "x": 0.811,
+      "y": 0.486,
+      "w": 0.109,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Other",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.5047,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q15 - Return: Other (specify)",
+      "type": "text",
+      "page": 0,
+      "x": 0.764,
+      "y": 0.503,
+      "w": 0.156,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: Work",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.5565,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: Company Business",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.5738,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: School",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.5911,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: Shopping",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.6083,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: Entertainment",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.6256,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: Medical",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.6429,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: Social/Family",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.6602,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q16 - Trip Purpose: Personal Business",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.6774,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Would Not Make Trip",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.7458,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Walk",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.8291,
+      "y": 0.7458,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Bike",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.7631,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Scooter",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.7067,
+      "y": 0.7631,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Drive",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.7739,
+      "y": 0.7631,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Taxi",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.8281,
+      "y": 0.7631,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Carpooled",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.7803,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Uber/Lyft",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.7976,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Other",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.8149,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q17 - Alt Mode: Other (specify)",
+      "type": "text",
+      "page": 0,
+      "x": 0.696,
+      "y": 0.813,
+      "w": 0.12,
+      "h": 0.018
+    },
+    {
+      "name": "Q18 - Gender: Female/Woman",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.8667,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q18 - Gender: Male/Man",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.7952,
+      "y": 0.8667,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q18 - Gender: Non-Binary/Gender Fluid",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.6561,
+      "y": 0.884,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q18 - Gender: Prefer Not to Answer",
+      "type": "checkbox",
+      "page": 0,
+      "x": 0.7952,
+      "y": 0.884,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q18 - Gender: Self Describe (specify)",
+      "type": "text",
+      "page": 0,
+      "x": 0.774,
+      "y": 0.899,
+      "w": 0.146,
+      "h": 0.018
+    },
+    {
+      "name": "Q19 - Age",
+      "type": "text",
+      "page": 1,
+      "x": 0.153,
+      "y": 0.073,
+      "w": 0.12,
+      "h": 0.022
+    },
+    {
+      "name": "Q20 - Traveling With Child: Yes",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.1262,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q20 - Traveling With Child: No",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.115,
+      "y": 0.1262,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q21 - English: Very Well",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.178,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q21 - English: Well",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1075,
+      "y": 0.178,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q21 - English: Not Well",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.153,
+      "y": 0.178,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q21 - English: Not At All",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.217,
+      "y": 0.178,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q22 - Other Language: No",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.2298,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q22 - Other Language: Yes",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.115,
+      "y": 0.2298,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q22 - Other Language (specify)",
+      "type": "text",
+      "page": 1,
+      "x": 0.181,
+      "y": 0.228,
+      "w": 0.1,
+      "h": 0.018
+    },
+    {
+      "name": "Q23 - Hispanic/Latino: No",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.2816,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q23 - Hispanic/Latino: Yes",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.115,
+      "y": 0.2816,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q23 - Hispanic/Latino (specify)",
+      "type": "text",
+      "page": 1,
+      "x": 0.181,
+      "y": 0.279,
+      "w": 0.1,
+      "h": 0.018
+    },
+    {
+      "name": "Q24 - Race: White/Caucasian",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.3327,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q24 - Race: Asian/Pacific Islander",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1497,
+      "y": 0.3327,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q24 - Race: Mixed Race",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.35,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q24 - Race: Black/African American",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1497,
+      "y": 0.35,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q24 - Race: American Indian/Alaskan Native",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.3673,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q24 - Race: Prefer Not To Answer",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.3845,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q24 - Race: Other (specify)",
+      "type": "text",
+      "page": 1,
+      "x": 0.221,
+      "y": 0.383,
+      "w": 0.07,
+      "h": 0.018
+    },
+    {
+      "name": "Q25 - Household Size",
+      "type": "text",
+      "page": 1,
+      "x": 0.095,
+      "y": 0.433,
+      "w": 0.195,
+      "h": 0.022
+    },
+    {
+      "name": "Q26 - Vehicles in Household",
+      "type": "text",
+      "page": 1,
+      "x": 0.106,
+      "y": 0.485,
+      "w": 0.185,
+      "h": 0.022
+    },
+    {
+      "name": "Q27 - Disability: No",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.5565,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q27 - Disability: Vision",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.5738,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q27 - Disability: Hearing",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.5911,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q27 - Disability: Mobility",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.6083,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q27 - Disability: Other",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.6256,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: Under $15k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.6774,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $75k-$99.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1497,
+      "y": 0.6774,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $15k-$24.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.6947,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $100k-$149.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1497,
+      "y": 0.6947,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $25k-$34.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0449,
+      "y": 0.7112,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $150k-$199.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1497,
+      "y": 0.7112,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $35k-$49.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.7285,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $200k-$249.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1497,
+      "y": 0.7285,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $50k-$74.9k",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.0454,
+      "y": 0.7458,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q28 - Income: $250k+",
+      "type": "checkbox",
+      "page": 1,
+      "x": 0.1497,
+      "y": 0.7458,
+      "w": 0.014,
+      "h": 0.018
+    },
+    {
+      "name": "Q29 - Most Important Bus Improvement",
+      "type": "text",
+      "page": 1,
+      "x": 0.048,
+      "y": 0.818,
+      "w": 0.232,
+      "h": 0.14
+    },
+    {
+      "name": "Contact - Name",
+      "type": "text",
+      "page": 1,
+      "x": 0.771,
+      "y": 0.63,
+      "w": 0.19,
+      "h": 0.02
+    },
+    {
+      "name": "Contact - Street Address",
+      "type": "text",
+      "page": 1,
+      "x": 0.771,
+      "y": 0.668,
+      "w": 0.19,
+      "h": 0.02
+    },
+    {
+      "name": "Contact - City/Town",
+      "type": "text",
+      "page": 1,
+      "x": 0.771,
+      "y": 0.705,
+      "w": 0.19,
+      "h": 0.02
+    },
+    {
+      "name": "Contact - State",
+      "type": "text",
+      "page": 1,
+      "x": 0.771,
+      "y": 0.743,
+      "w": 0.19,
+      "h": 0.02
+    },
+    {
+      "name": "Contact - Zip Code",
+      "type": "text",
+      "page": 1,
+      "x": 0.771,
+      "y": 0.78,
+      "w": 0.19,
+      "h": 0.02
+    },
+    {
+      "name": "Contact - Phone",
+      "type": "text",
+      "page": 1,
+      "x": 0.821,
+      "y": 0.842,
+      "w": 0.13,
+      "h": 0.02
+    },
+    {
+      "name": "Contact - Email",
+      "type": "text",
+      "page": 1,
+      "x": 0.846,
+      "y": 0.879,
+      "w": 0.105,
+      "h": 0.02
+    }
+  ]
+}

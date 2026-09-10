@@ -1,0 +1,36 @@
+# generated/scan/data directories
+all_batches/
+itinerary40/
+diag_overlays_31/
+diag_overlays_32/
+diag_overlays_33/
+mailback/
+mailback513/
+mailback521/
+mixed_batch/
+scans/
+calibration_debug/
+rescan_313233/
+test2/
+debug_out_v2/
+
+# images (debug crops/overlays/scans)
+*.png
+*.jpg
+*.jpeg
+
+# scanned/answer PDFs (keep blank template only)
+*.pdf
+!NJTransitSurvey2026_BLANK.pdf
+
+# generated result spreadsheets and logs
+results*.xlsx
+survey_results*.xlsx
+*.log
+
+# python
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
