@@ -22,6 +22,7 @@ debug_out_v2/
 # scanned/answer PDFs (keep blank template only)
 *.pdf
 !NJTransitSurvey2026_BLANK.pdf
+!BRNB422005F2960_004268.pdf
 
 # generated result spreadsheets and logs
 results*.xlsx

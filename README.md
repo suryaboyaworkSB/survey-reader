@@ -1,127 +1,44 @@
-# Survey Form OCR Processor
+# Survey Reader
 
-Reads **handwritten text** and **checkboxes** from scanned PDF survey forms and exports all answers to an **Excel spreadsheet** — no AI training required.
+Reads scanned paper survey forms (bubble/checkbox answers) and exports results to Excel, using image alignment against a blank template rather than a trained model.
 
----
+## Key files
 
-## How it works
+- `survey_ocr.py` — CLI entry point / main pipeline
+- `grid_pipeline.py` — the accurate reading pipeline (ORB homography + template subtraction); the most actively developed file
+- `grid_detect.py` — bubble detection + ink scoring
+- `chunk_scan.py` — resumable per-survey batch runner, best for large itineraries (can be interrupted and resumed)
+- `batch_scan.py` — simpler whole-folder batch runner, one-shot (fine to run locally with no time limit)
+- `make_dataentry_csv.py` — builds a data-entry CSV from a results workbook
 
-1. You provide the **blank original form** as the reference template.
-2. The script aligns each scanned filled-in form to that template.
-3. It crops out each answer field, runs OCR on text fields, and detects tick marks on checkbox fields.
-4. All answers are written to `survey_results.xlsx`, one row per form.
+## Required data files
 
----
+These must sit alongside the scripts in the repo root:
 
-## Setup (one-time)
+- `form_config.json` — field/bubble layout configuration
+- `calibration_overrides.json` — per-form calibration adjustments
+- `BRNB422005F2960_004268.pdf` — the blank form template used as the alignment reference
 
-You need Python 3.8+ installed.  Then run:
+## Usage
 
-```bash
-pip install pymupdf opencv-python-headless pillow easyocr numpy openpyxl
-```
-
-> The first time you run the script, EasyOCR will download a small English language model (~50 MB). After that it works offline.
-
----
-
-## Step 1 — Configure your form fields
-
-Open **`form_config.json`** and define where each answer field appears on your form.
-
-Coordinates use **fractions of the page size** (0.0–1.0), so they work regardless of scan resolution.
-
-### How to find coordinates
-
-The easiest way:
-
-1. Open your blank PDF in a viewer and note roughly where each field is.
-2. Estimate: if a field starts halfway across and a quarter down the page, that's `x: 0.5, y: 0.25`.
-3. Run the script once on a test scan and check the output — adjust coordinates if the wrong area was captured.
-
-### Field types
-
-| `type` | Use for |
-|--------|---------|
-| `"text"` | Any handwritten answer box |
-| `"checkbox"` | A tick box / bubble (returns **Yes** or **No**) |
-
-### Example entry
-
-```json
-{
-  "name": "Q1 - Satisfaction rating",
-  "type": "text",
-  "page": 0,
-  "x": 0.10,
-  "y": 0.20,
-  "w": 0.60,
-  "h": 0.05
-}
-```
-
----
-
-## Step 2 — Organise your files
-
-```
-my_project/
-├── blank_form.pdf          ← your original unwritten form
-├── scans/
-│   ├── form_001.pdf        ← each completed scan is one PDF
-│   ├── form_002.pdf
-│   └── ...
-├── form_config.json        ← field definitions
-└── survey_ocr.py           ← the script
-```
-
----
-
-## Step 3 — Run the script
+Process a folder of scanned forms:
 
 ```bash
-python survey_ocr.py \
-  --template blank_form.pdf \
-  --scans    scans/ \
-  --config   form_config.json \
-  --output   survey_results.xlsx
+# Resumable — best for large batches, can be safely interrupted and re-run
+python3 chunk_scan.py INPUT_FOLDER
+
+# One-shot — simpler, fine for smaller batches with no time limit
+python3 batch_scan.py INPUT_FOLDER
 ```
 
-### Options
+## Setup
 
-| Flag | Default | Description |
-|------|---------|-------------|
-| `--template` | *(required)* | Path to blank form PDF |
-| `--scans` | *(required)* | Folder of completed scan PDFs |
-| `--config` | `form_config.json` | Field layout config |
-| `--output` | `survey_results.xlsx` | Output spreadsheet |
-| `--dpi` | `200` | Rendering quality — raise to `300` for better accuracy on small handwriting |
+```bash
+pip install -r requirements.txt
+```
 
----
+(See individual scripts for additional dependencies such as `opencv-python`, `pymupdf`, and `openpyxl`.)
 
-## Tips for best results
+## Notes
 
-- **Scan quality matters** — 200 DPI minimum; 300 DPI recommended for handwriting.
-- **Consistent scanning** — try to scan all forms at the same orientation and size.
-- **Checkbox sensitivity** — if checkboxes are being misread, adjust the `threshold` value inside `read_checkbox_field()` in the script (lower = more sensitive).
-- **Multi-page forms** — set `"pages_per_form"` in the config and specify `"page": 1` (etc.) for fields on later pages.
-
----
-
-## Output format
-
-`survey_results.xlsx` will have:
-- **Row 1**: Header with field names
-- **Row 2+**: One row per scanned form
-- **Column A**: The filename of the scanned PDF
-
----
-
-## Troubleshooting
-
-| Problem | Fix |
-|---------|-----|
-| OCR reads wrong text | Re-check x/y/w/h coordinates; increase `--dpi` |
-| All checkboxes show "No" | Lower the threshold in `read_checkbox_field()` |
-| "No PDF files found" | Make sure your scan files end in `.pdf` |
-| Very slow processing | Normal for first run (model download); subsequent runs are faster |
+Scanned inputs, debug/calibration images, and generated result spreadsheets are excluded from version control via `.gitignore` — only source scripts and the three required config/template files above are tracked. Several old `form_config*.json` backup variants (`.bak`, `.bak2`, `_original`, `_calibrated`, etc.) are also still tracked from earlier iterations and can likely be cleaned up.
